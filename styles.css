@@ -83,20 +83,12 @@ main {
   margin-bottom: 50px;
 }
 
-.image-container {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border: 2px solid black;
-  margin: 10px;
-}
-
 img {
-  width: 350px;
-  height: 350px;
+  width: 25em;
+  height: 18em;
   margin: 10px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border: 3px solid black;
   border-radius: 15px;
 }
@@ -152,11 +144,12 @@ img {
 
 .createdby {
   font-style: italic;
+  padding-bottom: 10px;
 }
 
 /* Small screen settings */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 500px) {
   .navbar-list {
     display: none;
   }
