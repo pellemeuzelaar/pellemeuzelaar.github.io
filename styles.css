@@ -120,6 +120,7 @@ img {
 
 .button:hover {
   color: white;
+  z-index: 1
 }
 
 /* Small screen settings */
