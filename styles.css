@@ -123,6 +123,11 @@ img {
   z-index: 1
 }
 
+.socials {
+  text-decoration: none;
+  color: black;
+}
+
 /* Small screen settings */
 
 @media only screen and (max-width: 577px) {
