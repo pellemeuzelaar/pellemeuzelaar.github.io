@@ -94,6 +94,7 @@ img {
   border-radius: 31px;
   padding: 16px 24px;
   text-decoration: none;
+  transition: color 0.4s;
 }
 
 /* Small screen settings */
