@@ -249,7 +249,7 @@ img {
 
 .socials {
   padding: 5px;
-  text-align: left
+  text-align: center;
 }
 
 #profile-link {
@@ -277,7 +277,7 @@ img {
 .createdby {
   font-style: italic;
   padding-bottom: 15px;
-  text-align: left;
+  text-align: center;
 }
 
 /* Small screen settings */
@@ -337,11 +337,5 @@ img {
   .fuji {
     width: 80vw;
     margin: auto;
-  }
-  .socials {
-    text-align: center;
-  }
-  .createdby {
-    text-align: center;
   }
 }
