@@ -233,8 +233,8 @@ img {
 .about-content{
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .about-text {
@@ -327,6 +327,8 @@ img {
   }
   .about-content {
     display: block;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .about-text {
     width: 80vw;
