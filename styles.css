@@ -99,7 +99,7 @@ main {
   padding: 45px;
   margin: 0px;
   text-align: left;
-  font-size: 45px;
+  font-size: 40px;
   border-bottom: 3px solid black;
   position: relative;
 }
@@ -114,16 +114,36 @@ main {
   padding: 45px;
   margin: 0px;
   text-align: left;
-  font-size: 45px;
+  font-size: 40px;
   border-bottom: 3px solid black;
   position: relative;
 }
 
-.subscript {
-  text-align: justify;
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.banner {
+  display: block;
+  width: 100vw;
+  margin-top: 5px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 2s ease;
+  text-align: center;
+  font-size: 18px;
+}
+
+.intro {
   padding: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  text-align: justify;
+  font-size: 18px
 }
 
 .project-title {
@@ -210,13 +230,16 @@ img {
 .about-content{
   display: flex;
   align-items: center;
+  padding: 0px 100px;
 }
 
 .about-text {
-  padding: 0px 20px;
+  margin: 20px;
+  padding: 20px 0px;
 }
 
 .fuji {
+  margin: 20px;  
   max-width: 350px;
   max-height: auto;
 }
@@ -235,7 +258,7 @@ img {
 #profile-link::after {
   content: "";
   position: absolute;
-  bottom: -2px; /* Adjusts the position of the underline */
+  bottom: -2px;
   left: 0;
   width: 0;
   height: 2px;
@@ -276,6 +299,9 @@ img {
     font-size: clamp(16px, 8vw, 35px);
     text-align: center;
   }
+  .intro {
+    padding: 0px 15px;
+  }
   .project-tile {
     display: inline-block;
     border-bottom: transparent;
@@ -289,12 +315,20 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 81vw;
     height: 60%;
     max-width: 600px;
     max-height: 400px;
   }
   .about-content {
-    display: block
+    display: block;
+  }
+  .about-text {
+    width: 60vw;
+    margin: auto;
+  }
+  .fuji {
+    width: 60vw;
+    margin: auto;
   }
 }
