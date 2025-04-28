@@ -96,16 +96,27 @@ main {
 }
 
 .subheader {
-  padding: 50px;
+  padding: 45px;
   margin: 0px;
   text-align: left;
-  font-size: 50px;
+  font-size: 45px;
   border-bottom: 3px solid black;
+  position: relative;
 }
 
-.title-span {
-  font-family: "JetBrainsMonoThin", sans-serif;
+.subheader::after {
+  content: " [Pelle Meuzelaar]";
   display: inline;
+  font-family: "JetBrainsMonoThin", sans-serif;
+}
+
+.subheader2 {
+  padding: 45px;
+  margin: 0px;
+  text-align: left;
+  font-size: 45px;
+  border-bottom: 3px solid black;
+  position: relative;
 }
 
 .subscript {
@@ -116,7 +127,7 @@ main {
 }
 
 .project-title {
-  font-weight: bold
+  font-weight: bold;
 }
 
 .project-tile {
@@ -196,6 +207,20 @@ img {
   z-index: 1
 }
 
+.about-content{
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  padding: 0px 20px;
+}
+
+.fuji {
+  max-width: 350px;
+  max-height: auto;
+}
+
 .socials {
   padding: 5px;
 }
@@ -235,13 +260,21 @@ img {
   }
 }
 
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: 920px) {
   .subheader {
     font-size: clamp(16px, 8vw, 35px);
     text-align: center;
   }
-  .title-span {
+  .subheader::after {
+    content: " /PELLE MEUZELAAR";
     display: block;
+    font-size: 18px;
+    padding-top: 5px;
+    font-family: "JetBrainsMonoThin", sans-serif;
+  }
+  .subheader2 {
+    font-size: clamp(16px, 8vw, 35px);
+    text-align: center;
   }
   .project-tile {
     display: inline-block;
@@ -260,5 +293,8 @@ img {
     height: 60%;
     max-width: 600px;
     max-height: 400px;
+  }
+  .about-content {
+    display: block
   }
 }
