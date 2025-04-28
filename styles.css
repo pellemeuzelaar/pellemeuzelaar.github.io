@@ -7,6 +7,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "JetBrainsMono-Light";
+  src: url("fonts/JetBrainsMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMonoThin";
+  src: url("fonts/JetBrainsMono-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "JetBrainsMono-Light", sans-serif;
 }
@@ -84,9 +98,14 @@ main {
 .subheader {
   padding: 50px;
   margin: 0px;
-  text-align: left;
+  text-align: center;
   font-size: 50px;
   border-bottom: 3px solid black;
+}
+
+.title-span {
+  font-family: "JetBrainsMonoThin", sans-serif;
+  display: inline;
 }
 
 .subscript {
@@ -97,7 +116,7 @@ main {
 }
 
 .project-title {
-  font-weight: 800
+  font-weight: bold
 }
 
 .project-tile {
@@ -178,25 +197,50 @@ img {
 }
 
 .socials {
-  padding: 10px;
+  padding: 5px;
 }
 
 #profile-link {
   text-decoration: none;
   color: black;
   padding: 0px 20px 0px 0px;
+  position: relative;
+}
+
+#profile-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjusts the position of the underline */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+#profile-link:hover::after {
+  width: 83%;
 }
 
 .createdby {
   font-style: italic;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 /* Small screen settings */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   .navbar-list {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .subheader {
+    font-size: clamp(16px, 8vw, 35px);
+  }
+  .title-span {
+    display: block;
   }
   .project-tile {
     display: inline-block;
@@ -205,6 +249,7 @@ img {
   }
   .project-tile-left {
     padding: 0px 20px;
+    text-align: center;
   }
   img {
     display: block;
@@ -214,8 +259,5 @@ img {
     height: 60%;
     max-width: 600px;
     max-height: 400px;
-  }
-  .project-tile-left {
-    text-align: center;
   }
 }
