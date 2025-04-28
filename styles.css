@@ -98,7 +98,7 @@ main {
 .subheader {
   padding: 50px;
   margin: 0px;
-  text-align: center;
+  text-align: left;
   font-size: 50px;
   border-bottom: 3px solid black;
 }
@@ -203,7 +203,7 @@ img {
 #profile-link {
   text-decoration: none;
   color: black;
-  padding: 0px 20px 0px 0px;
+  margin: 0px 20px 0px 0px;
   position: relative;
 }
 
@@ -219,7 +219,7 @@ img {
 }
 
 #profile-link:hover::after {
-  width: 83%;
+  width: 100%;
 }
 
 .createdby {
@@ -238,6 +238,7 @@ img {
 @media only screen and (max-width: 915px) {
   .subheader {
     font-size: clamp(16px, 8vw, 35px);
+    text-align: center;
   }
   .title-span {
     display: block;
