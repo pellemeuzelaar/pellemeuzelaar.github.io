@@ -98,7 +98,7 @@ main {
 .subheader {
   padding: 45px;
   margin: 0px;
-  text-align: left;
+  text-align: center;
   font-size: 40px;
   border-bottom: 3px solid black;
   position: relative;
