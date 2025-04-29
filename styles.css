@@ -239,6 +239,7 @@ img {
 
 .about-text {
   text-align: justify;
+  margin-right: 10%;
 }
 
 .fuji {
@@ -288,7 +289,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 930px) {
   .subheader {
     font-size: clamp(16px, 8vw, 35px);
     text-align: center;
