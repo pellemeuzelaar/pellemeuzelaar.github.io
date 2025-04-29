@@ -23,10 +23,15 @@
 
 * {
   font-family: "JetBrainsMono-Light", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -34,7 +39,7 @@ body {
 #navbar {
   display: flex;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   font-family: Neuemontreal, sans-serif;
   text-transform: uppercase;
   border-bottom: 3px solid black;
@@ -130,7 +135,7 @@ main {
 
 .banner {
   display: block;
-  width: 100vw;
+  width: 100%;
   margin-top: 5px;
   height: 20px;
   white-space: nowrap;
@@ -309,7 +314,7 @@ img {
     padding: 0px 15px;
   }
   .project-tile {
-    display: inline-block;
+    display: block;
     border-bottom: transparent;
     padding: 0px;
   }
