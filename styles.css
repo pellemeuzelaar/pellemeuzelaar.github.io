@@ -142,7 +142,7 @@ main {
   overflow: hidden;
   animation: marquee 2s ease;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 5px;
 }
 
