@@ -30,10 +30,6 @@ body {
   margin: 0
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 /* Navbar */
 
 #navbar {
@@ -235,14 +231,14 @@ img {
 .about-content{
   display: flex;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 0px 100px 10px 100px;
 }
 
 .about-text {
   text-align: justify;
-  margin-right: 10%;
-  font-size: 15px
+  margin-right: 5%;
+  font-size: 15px;
+  padding-top: 5px;
 }
 
 .fuji {
