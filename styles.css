@@ -149,6 +149,7 @@ main {
 
 .project-title {
   font-weight: bold;
+  font-size: 15px;
 }
 
 .project-tile {
@@ -176,6 +177,7 @@ main {
 .description {
   margin-bottom: 20px;
   text-align: justify;
+  font-size: 15px;
 }
 
 img {
@@ -238,10 +240,11 @@ img {
   text-align: justify;
   margin-right: 5%;
   padding-top: 15px;
+  font-size: 15px;
 }
 
 .fuji {
-  margin: 0px 20px 20px 20px;  
+  margin: 20px;  
   max-width: 375px;
   height: 28em;
 }
