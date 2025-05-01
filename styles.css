@@ -242,6 +242,7 @@ img {
 .about-text {
   text-align: justify;
   margin-right: 10%;
+  font-size: 15px
 }
 
 .fuji {
@@ -336,6 +337,7 @@ img {
   .about-text {
     width: 80vw;
     margin: auto;
+    font-size: 16px;
   }
   .fuji {
     width: 80vw;
