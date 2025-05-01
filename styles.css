@@ -237,14 +237,13 @@ img {
 .about-text {
   text-align: justify;
   margin-right: 5%;
-  font-size: 15px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 .fuji {
   margin: 20px;  
   max-width: 400px;
-  max-height: auto;
+  height: 20em;
 }
 
 .socials {
@@ -333,7 +332,6 @@ img {
   .about-text {
     width: 80vw;
     margin: auto;
-    font-size: 16px;
   }
   .fuji {
     width: 80vw;
